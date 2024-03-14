@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Task No 1
+        var character = prompt("Enter a character:");
+        var asciiCode = character.charCodeAt(0);
+        if (asciiCode >= 48 && asciiCode <= 57) {
+            alert(character + " is a number.");
+        }
+
+        else if (asciiCode >= 65 && asciiCode <= 90) {
+            alert(character + " is an uppercase letter.");
+        }
+
+        else if (asciiCode >= 97 && asciiCode <= 122) {
+            alert(character + " is a lowercase letter.");
+        }
+
+        else {
+            alert("Invalid input. Please enter a character.");
+        }
+
+        // Task No 2
+        var inte1 = prompt("Enter number 1")
+        var inte2 = prompt("Enter number 2")
+        if (inte1 > inte2) {
+            alert("The large integer is :" + inte1)
+        }
+        else if (inte1 < inte2) {
+            alert("The large integer is :" + inte2)
+        }
+        else if (inte1 == inte2) {
+            alert("The integer is equal")
+        }
+        else (
+            alert("Please enter a number")
+        )
+
+        // Task No 3
+        var num2 = prompt("Enter a number")
+        if (num2 > 0) {
+            alert("The number is positive")
+        }
+        else if (num2 < 0) {
+            alert("The number is negative")
+        }
+        else (
+            alert("Please enter a number")
+        )
+
+        // Task No 4
+        var entvo = prompt("Enter a vowel")
+        if (entvo == "a") {
+            alert(true)
+        }
+        else if (entvo == "e") {
+            alert(true)
+        }
+        else if (entvo == "i") {
+            alert(true)
+        }
+        else if (entvo == "o") {
+            alert(true)
+        }
+        else if (entvo == "u") {
+            alert(true)
+        }
+        else (
+            alert("This is not a vowel")
+        )
+
+        // Task No 5
+        var correct = prompt("Enter your correct password")
+        var reEnter = prompt("Re Enter your correct password")
+        if (correct == reEnter) {
+            alert("Correct! The password you entered matches the original password.")
+        }
+        else (
+            alert("Your password is incorrect")
+        )
+
+        // Task No 6
+        var greeting;
+        var hour = prompt("What time is it in 24 hours format");
+        if (hour < 18) {
+            greeting = "Good day"
+            alert(greeting)
+        }
+        else {
+            greeting = "Good evening"
+            alert(greeting)
+        }
+
+        // Task No 7
+        var time = prompt("Enter time 24 hours format")
+        if (time < 12){
+            alert("Good morning!")
+        }
+        else if (time >= 12 && time < 17){
+            alert("Good afternoon!")
+        }
+        else if (time >= 17 && time < 21){
+            alert("Good evening!")
+        }
+        else if (time >= 21 && time <= 23.9){
+            alert("Good night!")
+        }
+    </script>
+</body>
+
+</html>
